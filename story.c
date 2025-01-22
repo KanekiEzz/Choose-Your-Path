@@ -5,14 +5,12 @@ void askQuestion(char *question, char *optionA, char *optionB) {
     char answer;
     scanf(" %c", &answer);
 
-    if (answer == 'A') {
+    if (answer == 'A')
         printf("%s\n", optionA);
-    } else if (answer == 'B') {
+    else if (answer == 'B')
         printf("%s\n", optionB);
-    } else {
-        printf("Invalid input. Please choose either A or B.\n");
-        exit(1);
-    }
+    else
+        (printf("Invalid input. Please choose either A or B.\n"), exit(1));
 }
 
 int main() {
